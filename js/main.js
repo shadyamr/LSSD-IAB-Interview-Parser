@@ -1,39 +1,3 @@
-/*
-//  MIT License
-//
-//  Copyright (c) 2021 Acygol
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in all
-//  copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-//  SOFTWARE.
-//
-//
-//  By JeffersonKay - please ask before sharing this repository. I like to keep record
-//  of roughly how many people this tool has reached.
-//
-//  Initially used for the Training and Recruitment division of the GTAW Fire Department, 
-//  repurposed for the GTAW State Fire Marshals. I tried making it as generalized as possible.
-//
-//  Edit, copy, do whatever. I don't care. Just leave the credits; read the license.
-//
-//  TODO: this file needs some cleaning up, comments, etc. I'll eventually get to it.
-//
-*/
-
 // Template variables
 const TPLTVAR_HEADER_IMAGE_LINK       = '$HEADER_IMAGE_LINK$';       // The header image link provided by the user
 const TPLTVAR_DIVBOX_COLOR            = '$DIVBOX_COLOR$';            // The color for the title divbox and the legend headers
@@ -51,20 +15,10 @@ const MAIN_TEMPLATE = `[divbox=white]
 [divbox=${TPLTVAR_DIVBOX_COLOR}][color=white][center][size=150][font=AmerType Md BT]INTERVIEW - ${TPLTVAR_INTERVIEWEE_NAME}[/font][/size][/center][/color][/divbox]
 
 [justify]
-[legend=${TPLTVAR_DIVBOX_COLOR}, Preinterview]${TPLTVAR_PREINTERVIEW_TEXT}[/legend]
+[legend=${TPLTVAR_DIVBOX_COLOR},Preinterview,#fff]${TPLTVAR_PREINTERVIEW_TEXT}[/legend]
 ${TPLTVAR_QUESTIONS_CONTAINER}
 [/justify]
 [/divbox]
-
-Response format:
-[code]
-[legend=${TPLTVAR_DIVBOX_COLOR}, Evaluation]
-[b]Reviewer's name:[/b]
-[b]Reviewer's badge number:[/b]
-[b]Evaluation:[/b]
-[b](([/b] [b]OOC Note:[/b] (optional) [b]))[/b]
-[/legend]
-[/code]
 `
 
 // Individual question template
