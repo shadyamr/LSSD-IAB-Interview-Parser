@@ -46,7 +46,7 @@ const TPLTVAR_QUESTION_ANSWER_CONTENT = '$QUESTION_ANSWER_CONTENT$'; // The answ
 // The main template is the parent template; individual question templates are parsed
 // and then embedded within this template.
 const MAIN_TEMPLATE = `[divbox=white]
-[dabanner_n][/dabanner_n] 
+[center][img]https://i.imgur.com/IfurF6g.png[/img][/center]
 
 [divbox=${TPLTVAR_DIVBOX_COLOR}][color=white][center][size=150][font=AmerType Md BT]INTERVIEW - ${TPLTVAR_INTERVIEWEE_NAME}[/font][/size][/center][/color][/divbox]
 
@@ -68,14 +68,14 @@ Response format:
 `
 
 // Individual question template
-const QUESTION_TEMPLATE = `[legend=${TPLTVAR_DIVBOX_COLOR}, ${TPLTVAR_QUESTION_TEXT}]${TPLTVAR_QUESTION_ANSWER_CONTENT}[/legend]`
+const QUESTION_TEMPLATE = `[legend=${TPLTVAR_DIVBOX_COLOR},${TPLTVAR_QUESTION_TEXT},#fff]${TPLTVAR_QUESTION_ANSWER_CONTENT}[/legend]`
 
 // Errors
 let g_HasError = false;
 const g_ErrorDiv = document.getElementById('div-error');
 
 // Default colors
-const g_DefaultDivboxColor  = '#791616'; // Some shade of blue!
+const g_DefaultDivboxColor  = '#084f0a'; // Some shade of blue!
 const g_DefaultRoleplayColor = '#AD82CE'; // Some shade of purple
 
 // Form data
